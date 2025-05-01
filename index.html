@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Start Screen -->
-    <div id="startScreen">
-        <h1>Welcome to the Relative Pitch Game</h1>
-        <p>Choose a game mode:</p>
-        <button id="mode1">First 2 notes</button>
-        <button id="mode2">First 3 notes</button>
-        <button id="mode3">First 4 notes</button>
-        <button id="mode4">First 5 notes</button>
-        <button id="mode5">First 6 notes</button>
-        <button id="mode6">First 7 notes</button>
-        <button id="mode7">Entire Octave (C4-C5)</button>
-        <button id="mode8">Entire Octave (C4-C5)</button> <!-- New mode for C4-C5 -->
+    <div id="startScreen" class="screen">
+        <h1>Relative Pitch Game</h1>
+        <div class="modes">
+            <button id="mode1">First 2 notes</button>
+            <button id="mode2">First 3 notes</button>
+            <button id="mode3">First 4 notes</button>
+            <button id="mode4">First 5 notes</button>
+            <button id="mode5">First 6 notes</button>
+            <button id="mode6">First 7 notes</button>
+            <button id="mode7">Entire Octave (C4–C5)</button>
+            <button id="mode8">One Octave (C4–C5)</button>
+        </div>
     </div>
 
     <!-- Game Screen -->
-    <div id="gameScreen" style="display: none;">
+    <div id="gameScreen" class="screen">
         <button id="backButton">Back</button>
-        <button id="resetScoreButton">Reset Score</button>
-        <div id="noteDisplay"></div>
+        <h2 id="noteRange">One octave (C4 to C5)</h2>
+        <p id="noteDisplay">Listen to the note!</p>
         <div id="noteOptions"></div>
-        <p id="noteRange"></p> <!-- This paragraph will display the updated note range text -->
         <p id="currentScore">Score: 0</p>
         <button id="nextButton" disabled>Next</button>
+        <button id="resetScoreButton">Reset Score</button>
     </div>
 
     <script src="script.js"></script>
