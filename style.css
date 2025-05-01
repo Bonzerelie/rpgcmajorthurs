@@ -132,7 +132,7 @@ body {
 .mode-adjust-buttons {
   display: flex;
   gap: 10px;
-  margin: 10px 0;
+  margin: 0px 0;
 }
 
 .mode-button {
