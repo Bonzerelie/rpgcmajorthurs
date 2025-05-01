@@ -132,9 +132,16 @@ body {
 .mode-adjust-buttons {
   display: flex;
   gap: 10px;
-  margin: 0px 0;
+  margin: 10px 0;
 }
 
 .mode-button {
   margin-bottom: 10px;
+}
+
+#remove-note, #add-note {
+  padding: 4px 10px;
+  font-size: 18px;
+  min-width: 40px;
+  min-height: 36px;
 }
